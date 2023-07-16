@@ -1,0 +1,370 @@
+
+
+body {
+
+font-family: 'Zen Kaku Gothic New', sans-serif;
+	font-size: 22px;
+	line-height: 30px;
+	background-color: #f6f6f2;
+	border: 0px solid red;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+
+a {text-decoration: none;}
+
+
+.pagestructure {
+	max-width: 1200px;
+	margin: auto;
+	padding: 30px 0px 50px 0px;
+}
+
+.backlightblue {
+	background: rgb(203,213,240);
+	background: linear-gradient(0deg, rgba(203,213,240,1) 0%, rgba(230,237,255,1) 100%);
+	/* -- background-color: #cbd5f0; -- */
+}
+.backdarkblue {background-color: #0375b4; color: #ffffff;}
+.backdarkblue h1, .backdarkblue h2 {color: #ffffff;}
+
+.backgrey {background-color: dimgrey; color: #ffffff;}
+.backgrey h1, .backgrey h2 {color: #ffffff;}
+
+
+h1 {
+	font-family: 'Anonymous Pro', monospace;
+	text-align: center;
+	font-size: 80px;
+	line-height: 80px;
+	color: #0375b4;
+}
+
+h2 {
+	font-family: 'Anonymous Pro', monospace;
+	text-align: center;
+	text-transform: uppercase;
+	color: #0375b4;
+	font-size: 40px;
+	line-height: 44px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+	h1 {font-size: 56px; line-height: 60px;}
+	.pagestructure { padding:  30px;}
+}
+
+@media screen and (max-width: 400px) {
+	h1 {font-size: 40px; line-height: 50px;}
+	h2 {font-size: 30px; line-height: 40px;}
+}
+
+
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+
+
+
+
+
+
+.introsection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.introsection img {
+	transform: rotate(5deg);
+	max-width: 300px;
+	border: 1px solid #333333;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.introsection > div {border: 0px solid red;  text-align: center; padding: 40px;}
+
+
+
+
+@media screen and (max-width: 900px) {
+	.introsection {display: block; width: auto;}
+	.introsection > div {padding: 0px; margin: auto;}
+	.introsection > div:nth-child(2) {display: none;}
+	.introsection img {max-width: 200px;}
+}
+
+
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+
+
+
+
+.listofbooks {display: flex; width: 100%; flex-wrap: wrap;}
+.listofbooks div {width: 25%; text-align: center;}
+.listofbooks img {width: 250px; margin: auto;}
+
+.listofbooks a {
+	font-size: 16px;
+	border: 2px solid #0375b4;
+	border-radius: 5px;
+	padding: 10px 0px;
+	display: block;
+	margin: 10px auto;
+	width: 250px;
+	color: #0375b4;
+	background-color: #ffffff;
+	line-height: 30px;
+}
+
+.listofbooks a:hover {
+	background-color: #0375b4;
+	color: #ffffff;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	.listofbooks img {width: 150px;}
+	.listofbooks a {width: 200px;}
+}
+
+
+@media screen and (max-width: 900px) {
+	.listofbooks img {width: 80%; max-width: 250px;}
+	.listofbooks a {width: 80%; max-width: 250px; font-size: 14px; line-height: 16px; padding: 6px 0px;}
+	.listofbooks {flex-direction: row;}
+	.listofbooks div {width: 50%; text-align: center; margin-bottom: 50px;}
+}
+
+
+@media screen and (max-width: 400px) {
+	.listofbooks a {width: 80%; max-width: 250px; font-size: 12px; line-height: 16px; padding: 6px 0px;}
+}
+
+
+
+@media screen and (min-width: 900px) {
+
+.fade-in {
+	opacity:0;
+	transform: translateY(10%);
+	transition: all .6s ease-out;
+	width: 2000px;
+	margin-left: -400px;
+
+pointer-events: none;
+}
+
+.active {
+	opacity: 1;
+	transform: translateY(0);
+	width: 100%;
+	margin-left: 0px;
+pointer-events: auto;
+}
+
+.pagestructure {overflow: hidden;}
+
+}
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+
+
+
+
+
+
+
+.whoiscontent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.whoiscontent div {width: 50%;}
+
+.whoiscontent div:first-child {text-align: center;}
+
+.whoiscontent img {
+	width: 300px;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+	.whoiscontent {flex-direction: column-reverse;}
+	.whoiscontent img {width: 150px;}
+	.whoiscontent div {width: 90%; font-size: 18px;}
+}
+
+
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+.bestsellers {display: flex; width: 100%; flex-wrap: wrap;}
+.bestsellers div {width: 50%; text-align: center;}
+.bestsellers img {width: 300px;}
+
+.bestsellers a {
+	font-size: 16px;
+	border: 2px solid #0375b4;
+	border-radius: 5px;
+	padding: 5px;
+	display: block;
+	margin: 10px auto;
+	width: 250px;
+	color: #0375b4;
+	background-color: #ffffff;
+}
+
+.bestsellers a:hover {
+	background-color: #0375b4;
+	color: #ffffff;
+}
+
+.tiltleft {transform: rotate(-5deg);}
+.tiltright {transform: rotate(5deg);}
+
+
+.bestsellers p {
+	display: block;
+	font-size: 24px;
+	max-width: 500px;
+	margin: 40px auto;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+	.bestsellers div {width: 50%; margin-bottom: 80px;}
+	.bestsellers img {width: 80%; max-width: 200px;}
+	.bestsellers a {width: 90%; max-width: 200px;}
+	.bestsellers p {font-size: 18px; margin: 20px auto;}
+}
+
+@media screen and (max-width: 500px) {
+	.bestsellers {flex-direction: column;}
+	.bestsellers div {width: 100%;}
+}
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+.playlistcontent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1000px;
+}
+
+
+.playlistcontent div {width: 50%; text-align: center;}
+
+
+.playlistcontent img {max-width: 250px; margin: auto;}
+
+
+.playlistsection p {font-size: 20px; text-align: center; line-height: 26px; margin: 20px auto 50px auto;}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+	.playlistcontent {display: block;}
+	.playlistcontent div {width: 100%;}
+	.playlistcontent div:first-child {display: none;}
+	.playlistsection p {font-size: 16px; line-height: 20px;}
+	.playlistcontent img {max-width: 150px; margin: auto;}
+}
+
+
+
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+.footersection {margin-top: 30px; font-size: 12px; text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
