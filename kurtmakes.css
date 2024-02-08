@@ -13,7 +13,7 @@ font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 
-a {text-decoration: none;}
+a {text-decoration: none; color: #000;}
 
 
 .pagestructure {
@@ -49,6 +49,14 @@ h2 {
 	color: #0375b4;
 	font-size: 40px;
 	line-height: 44px;
+}
+
+h4 {
+	font-family: 'Anonymous Pro', monospace;
+	text-align: center;
+	color: #0375b4;
+text-transform: uppercase;
+margin-bottom: 10px;
 }
 
 
