@@ -160,7 +160,7 @@ margin-bottom: 10px;
 @media screen and (max-width: 900px) {
 	.featuredbooks-structure {flex-direction: column;}
 	.featuredbooks-structure > div:first-child, .featuredbooks-structure > div:nth-child(2) {
-	width: 80%; 
+	width: 90%; font-size: 18px; margin-bottom: 20px;
 	}
 
 }
