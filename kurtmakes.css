@@ -34,6 +34,8 @@ a {text-decoration: none; color: #000;}
 .backgrey h1, .backgrey h2 {color: #ffffff;}
 
 
+.backpurple {background-color: e1c3d3}
+
 h1 {
 	font-family: 'Anonymous Pro', monospace;
 	text-align: center;
@@ -121,6 +123,51 @@ margin-bottom: 10px;
 /*-----------------------------------------*/
 /*-----------------------------------------*/
 
+
+
+
+
+
+.featuredbooks-structure {display: flex; justify-content: center;}
+.featuredbooks-structure > div {margin: 0px 20px; width: 50%;}
+
+.featuredbook {max-width: 200px; transform: rotate(-5deg); margin: auto;}
+
+.featuredbooks-structure > div:first-child {width: 40%; text-align: center;}
+.featuredbooks-structure > div:nth-child(2) {width: 60%;}
+
+
+.featuredbooks a {
+	font-size: 16px;
+	border: 2px solid #0375b4;
+	border-radius: 5px;
+	padding: 10px 0px;
+	display: block;
+	margin: 10px auto;
+	max-width: 250px;
+	color: #0375b4;
+	background-color: #ffffff;
+	line-height: 30px;
+	text-align: center;
+}
+
+.featuredbooks a:hover {
+	background-color: #0375b4;
+	color: #ffffff;
+}
+
+
+@media screen and (max-width: 900px) {
+	.featuredbooks-structure {flex-direction: column;}
+	.featuredbooks-structure > div:first-child, .featuredbooks-structure > div:nth-child(2) {
+	width: 80%; 
+	}
+
+}
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
 
 
 
