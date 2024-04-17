@@ -1,5 +1,5 @@
 <head>
-<title>kurt makes crosswords</title>
+<title>Alaskan Cruise-Word Puzzles | kurt makes crosswords</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,9 +52,11 @@
 .puzzlerow > div:first-child {text-align: center; border: 0px solid red; }
 
 
-.puzzlerow a {color: #fff; background-color: #0375b4; border-radius: 10px; padding: 5px; display: block; margin-bottom: 10px; text-transform: uppercase; font-size: 16px;}
-.puzzlegrid {width: 100px; border: 1px solid #000; margin-bottom: 20px;}
-.puzzlename {font-size: 18px; text-transform: uppercase; font-weight: bold; margin-bottom: 0px;}
+.puzzlerow a {  border-radius: 10px; display: block;  text-transform: uppercase; font-size: 16px;}
+.printbutton {background-color: #0375b4; color: #fff; margin-bottom: 30px; display: block; padding: 10px;}
+.onlinebutton, .solutionbutton {color: #0375b4; text-transform: uppercase; font-size: 16px; border: 1px solid #0375b4; margin-bottom: 10px; padding: 4px;}
+.puzzlegrid {width: 120px; border: 1px solid #000; margin-bottom: 20px;}
+.puzzlename {font-size: 18px; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;}
 
 @media only screen and (max-width: 600px) {
 .puzzlerows {flex-direction: column;}
@@ -66,10 +68,10 @@
 <div class="puzzlerow">
 	<div>
 			<div class="puzzlename">Puzzle #1</div>
-			<div><img src="encore1-grid.png" class="puzzlegrid"></div>
-			<div><a href="encore1-print.pdf">print the puzzle</a></div>
-			<div><a href="https://amuselabs.com/pmm/crossword?id=b4b00c31&set=81eb3ff8c8e949cd1ffa6f94de47fc5e14e207d059320cccb602583b960a440b">solve online</a></div>
-			<div><a href="encore1-solution.png">see the solution</a></div>
+			<div><a href="encore1-print.pdf"><img src="encore1-grid.png" class="puzzlegrid"></a></div>
+			<div><a href="encore1-print.pdf" class="printbutton">print the puzzle</a></div>
+			<div><a href="https://amuselabs.com/pmm/crossword?id=b4b00c31&set=81eb3ff8c8e949cd1ffa6f94de47fc5e14e207d059320cccb602583b960a440b" class="onlinebutton">solve online</a></div>
+			<div><a href="encore1-solution.png" class="solutionbutton">see the solution</a></div>
 	</div>
 </div>
 
@@ -80,19 +82,19 @@
 <div class="puzzlerow">
 	<div>
 		<div class="puzzlename">Puzzle #2</div>
-		<div><img src="encore2-grid.png" class="puzzlegrid"></div>
-		<div><a href="encore2-print.pdf">print the puzzle</a></div>
-		<div><a href="https://amuselabs.com/pmm/crossword?id=42341704&set=81eb3ff8c8e949cd1ffa6f94de47fc5e14e207d059320cccb602583b960a440b">solve online</a></div>
-		<div><a href="encore2-solution.png">see the solution</a></div>
+		<div><a href="encore2-print.pdf"><img src="encore2-grid.png" class="puzzlegrid"></a></div>
+		<div><a href="encore2-print.pdf" class="printbutton">print the puzzle</a></div>
+		<div><a href="https://amuselabs.com/pmm/crossword?id=42341704&set=81eb3ff8c8e949cd1ffa6f94de47fc5e14e207d059320cccb602583b960a440b" class="onlinebutton">solve online</a></div>
+		<div><a href="encore2-solution.png" class="solutionbutton">see the solution</a></div>
 	</div>
 </div>
 
 <div class="puzzlerow">
 	<div>
 		<div class="puzzlename">Puzzle #3</div>
-		<div><img src="encore3-grid.png" class="puzzlegrid"></div>
-		<div><a href="encore3-print.pdf">print the puzzle</a></div>
-		<div><a href="encore3-solution.png">see the solution</a></div>
+		<div><a href="encore3-print.pdf"><img src="encore3-grid.png" class="puzzlegrid"></a></div>
+		<div><a href="encore3-print.pdf" class="printbutton">print the puzzle</a></div>
+		<div><a href="encore3-solution.png" class="solutionbutton">see the solution</a></div>
 	</div>
 </div>
 </div>
