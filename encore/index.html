@@ -47,32 +47,52 @@
 
 <style>
 .puzzlerows {display: flex; flex-direction: row; max-width: 800px; margin: auto; width: 90%;}
-.puzzlerow {margin: 10px auto; justify-content: center; align-items: center; border: 1px solid #ccc; width: 25%; padding: 20px;}
+.puzzlerow {margin: 10px auto; justify-content: center; align-items: center; border: 1px solid #ccc; width: 25%; padding: 20px; text-align: center;}
 .puzzlerow div {border: 0px solid red;}
-.puzzlerow > div:first-child {text-align: center; border: 0px solid red; }
+.puzzlerow > div {text-align: center; border: 0px solid red; }
 
 
 .puzzlerow a {  border-radius: 10px; display: block;  text-transform: uppercase; font-size: 16px;}
-.printbutton {background-color: #0375b4; color: #fff; margin-bottom: 30px; display: block; padding: 10px;}
+.printbutton {background-color: #0375b4; color: #fff; margin-bottom: 30px; display: block; padding: 10px; border-radius: 1em; text-transform: uppercase;}
 .onlinebutton, .solutionbutton {color: #0375b4; text-transform: uppercase; font-size: 16px; border: 1px solid #0375b4; margin-bottom: 10px; padding: 4px;}
 .puzzlegrid {width: 120px; border: 1px solid #000; margin-bottom: 20px;}
 .puzzlename {font-size: 18px; text-transform: uppercase; font-weight: bold; margin-bottom: 5px;}
 
 @media only screen and (max-width: 600px) {
-.puzzlerows {flex-direction: column;}
+.puzzlerows, .multirow {flex-direction: column;}
 .puzzlerow {width: 90%;}
 }
+
+
+.multirow-shell {margin: 20px auto; text-align: center; border: 1px solid #ccc; max-width: 600px; padding: 20px 50px;}
+.multirow {display: flex; margin: auto; justify-content: center;}
+.multirow-column {text-align: center; margin: 0px 20px}
 </style>
 
+
+
+<div class="multirow-shell">
+
+
+<div class="multirow">
+<div class="multirow-column"><div class="puzzlename">Puzzle #1</div><a href="alaska-cruise-word-puzzles.pdf"><img src="encore1-grid.png" class="puzzlegrid"></a></div>
+<div class="multirow-column"><div class="puzzlename">Puzzle #2</div><a href="alaska-cruise-word-puzzles.pdf"><img src="encore2-grid.png" class="puzzlegrid"></a></div>
+<div class="multirow-column"><div class="puzzlename">Puzzle #3</div><a href="alaska-cruise-word-puzzles.pdf"><img src="encore3-grid.png" class="puzzlegrid"></a></div>
+</div>
+
+<a href="alaska-cruise-word-puzzles.pdf" class="printbutton">Print the Puzzles</a>
+
+</div>
+
+
+
+
 <div class="puzzlerows">
+
 <div class="puzzlerow">
-	<div>
-			<div class="puzzlename">Puzzle #1</div>
-			<div><a href="encore1-print.pdf"><img src="encore1-grid.png" class="puzzlegrid"></a></div>
-			<div><a href="encore1-print.pdf" class="printbutton">print the puzzle</a></div>
-			<div><a href="https://amuselabs.com/pmm/crossword?id=b4b00c31&set=81eb3ff8c8e949cd1ffa6f94de47fc5e14e207d059320cccb602583b960a440b" class="onlinebutton">solve online</a></div>
-			<div><a href="encore1-solution.png" class="solutionbutton">see the solution</a></div>
-	</div>
+Solve Online<br><br>
+<div><a href="https://amuselabs.com/pmm/crossword?id=b4b00c31&set=81eb3ff8c8e949cd1ffa6f94de47fc5e14e207d059320cccb602583b960a440b" class="onlinebutton">Puzzle #1</a></div>
+<div><a href="https://amuselabs.com/pmm/crossword?id=42341704&set=81eb3ff8c8e949cd1ffa6f94de47fc5e14e207d059320cccb602583b960a440b" class="onlinebutton">Puzzle #2</a></div>
 </div>
 
 
@@ -80,24 +100,17 @@
 
 
 <div class="puzzlerow">
-	<div>
-		<div class="puzzlename">Puzzle #2</div>
-		<div><a href="encore2-print.pdf"><img src="encore2-grid.png" class="puzzlegrid"></a></div>
-		<div><a href="encore2-print.pdf" class="printbutton">print the puzzle</a></div>
-		<div><a href="https://amuselabs.com/pmm/crossword?id=42341704&set=81eb3ff8c8e949cd1ffa6f94de47fc5e14e207d059320cccb602583b960a440b" class="onlinebutton">solve online</a></div>
-		<div><a href="encore2-solution.png" class="solutionbutton">see the solution</a></div>
-	</div>
+Check Solutions<br><br>
+<div><a href="encore1-solution.png" class="solutionbutton">Puzzle #1</a></div>
+<div><a href="encore2-solution.png" class="solutionbutton">Puzzle #2</a></div>
+<div><a href="encore3-solution.png" class="solutionbutton">Puzzle #3</a></div>
 </div>
 
-<div class="puzzlerow">
-	<div>
-		<div class="puzzlename">Puzzle #3</div>
-		<div><a href="encore3-print.pdf"><img src="encore3-grid.png" class="puzzlegrid"></a></div>
-		<div><a href="encore3-print.pdf" class="printbutton">print the puzzle</a></div>
-		<div><a href="encore3-solution.png" class="solutionbutton">see the solution</a></div>
-	</div>
+
+
 </div>
-</div>
+
+
 
 <!---------------------------------------->
 
