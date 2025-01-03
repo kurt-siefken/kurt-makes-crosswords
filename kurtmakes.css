@@ -477,11 +477,20 @@ pointer-events: auto;
 
 
 
+.displaycase {display: flex; width: 100%; flex-wrap: wrap; margin: auto; justify-content: space-around;}
+.displaycase div {width: 30%; text-align: center; margin-bottom: 60px;}
+.displaycase img {width: 250px; margin: auto; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);}
+
+@media screen and (max-width: 900px) {
+	.displaycase img {width: 80%; max-width: 250px;}
+	.displaycase {flex-direction: row;}
+	.displaycase div {width: 50%; text-align: center; margin-bottom: 50px;}
+}
 
 
-
-
-
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
 
 
 
